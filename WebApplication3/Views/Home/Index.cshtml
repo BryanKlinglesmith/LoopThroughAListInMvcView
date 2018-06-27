@@ -1,0 +1,13 @@
+﻿@model LoopThroughAListInMvcView.Models.Conference
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<ul>
+
+    @foreach (var school in Model.schools)
+    {
+        <li>@school.UniversityName @school.Mascot</li>
+    }
+</ul>
